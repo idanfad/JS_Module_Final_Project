@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="media/barber-logo1.png">
+    <title>Make an appointment</title>
+    <link rel="stylesheet" href="stylefiles/appoinmentsstyle.css">
+    <script type="module" src="jsfiles/addmeeting.js" defer></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="headerBlock">
+            <div id="firstHeadBlock" class="headRowBlock">
+                <img width="80" height="90" src="media/barber-logo1.png" alt="barber logo">
+            </div>
+            <div id="secondHeadBlock" class="headRowBlock">
+                <a class="headSpan" href="index.html">My Appointments</a>
+                <a id="appointmentsStand" class="headSpan" href="appointments.html">Get Appointment</a>
+                <a class="headSpan" href="myAppoinments.html">Appointments Editor</a>
+                
+
+            </div>
+            <div id="thirdHeadBlock" class="headRowBlock">
+                <img width="40" height="40" src="media/facebook.png" alt="facebook logo">
+                <img width="40" height="40" src="media/instagram.png" alt="instagram logo">
+                <img width="40" height="40" src="media/youtube2.png" alt="youtube logo">
+
+            </div>
+            <!-- <div id="fourtHeadBlock" class="headRowBlock">Profile icons</div> -->
+        </div>
+        <div id="mainSection">
+
+
+            <div id="appointmentsContainer" class="rowBlock"></div>
+            <div class="rowBlock">
+                <div id="card">
+                    <div id="cardHeader">
+                        <h2>Jamili's Barber-Shop</h2>
+                    </div>
+                    <hr>
+                    <div id="formInputBlock">
+                        <label id="hairCutType">Choose haircut type</label><br><br>
+                        <div class="radio-container">
+                            <input class="radio-input" id="Man" type="radio" name="fruit" />
+                            <label class="radio" for="Man">Man's Haircut 60ILS</label>
+                            <input class="radio-input" id="haircutBeard" type="radio" name="fruit" />
+                            <label class="radio" for="haircutBeard">Haircut + Beard Cut 80ILS</label>
+                        </div>
+                        <div id="dateBlock">
+
+                            <label>Choose a date</label>
+
+                        </div>
+                        <div id="dateInput">
+                            <input id="getDate" type="datetime-local">
+
+                        </div>
+                        <div id="userNameBlock">
+                            <label>Full name</label>
+                        </div>
+                        <div id="userNameInput">
+                            <input id="userName" type="text" placeholder="type here...">
+                        </div>
+                        <div id="userPhoneBlock">
+                            <label>Phone number</label>
+                        </div>
+                        <div id="userPhoneInput">
+                            <input id="getUserPhone" type="number">
+                        </div>
+
+                        <div id="buttonBlock">
+                            <button id="goBtn" class="button-1" role="button">Book an appointment</button>
+                            <!-- <button id="goBtn">Add</button> -->
+
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="rowBlock"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap");
+body {
+  margin: 0;
+  font-family: "Rubik", Sans-serif;
+}
+body #wrapper #headerBlock {
+  color: rgb(65, 102, 102);
+  height: 110px;
+  background-color: #1b1e27;
+  display: flex;
+  text-align: center;
+  font-size: 15pt;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+body #wrapper #headerBlock .headRowBlock {
+  flex: 1;
+}
+body #wrapper #headerBlock #firstHeadBlock {
+  flex: 1;
+}
+body #wrapper #headerBlock #firstHeadBlock img {
+  padding-top: 5px;
+}
+body #wrapper #headerBlock #secondHeadBlock {
+  flex: 3;
+  font-family: "Rubik", Sans-serif;
+  font-size: 17px;
+  font-weight: 200;
+  line-height: 45px;
+  text-align: center;
+  padding-top: 30px;
+}
+body #wrapper #headerBlock #secondHeadBlock #homepageStand {
+  color: #614e0f;
+}
+body #wrapper #headerBlock #secondHeadBlock .headSpan {
+  text-decoration: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #ada8a0;
+  display: inline-block;
+  position: relative;
+}
+body #wrapper #headerBlock #secondHeadBlock .headSpan::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #614e0f;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+body #wrapper #headerBlock #secondHeadBlock .headSpan:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+body #wrapper #headerBlock #secondHeadBlock .headSpan:hover {
+  color: #614e0f;
+}
+body #wrapper #headerBlock #thirdHeadBlock {
+  flex: 1;
+}
+body #wrapper #headerBlock #thirdHeadBlock img {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+}
+body #wrapper #mainSection {
+  height: 100vh;
+  background-image: url(../media/cover\ main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+body #wrapper #mainSection .rowBlock {
+  flex: 1;
+  color: white;
+  padding: 5px;
+}
+body #wrapper #mainSection .rowBlock #card {
+  border-radius: 15px;
+  text-align: center;
+}
+body #wrapper #mainSection .rowBlock #card .records div {
+  background-color: #614e0f;
+  opacity: 0.8;
+  border-radius: 20px;
+  width: 320px;
+  text-align: center;
+  height: 210px;
+  margin: auto;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=appointmentsEdit.css.map */

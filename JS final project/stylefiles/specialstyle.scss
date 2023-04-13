@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Rubik", Sans-serif;
+    
+
+    #wrapper {
+        // height: 100vh;
+        // width: 100vw;
+
+
+        #headerBlock {
+            color: rgb(65, 102, 102);
+            height: 110px;
+            // border: 3px solid red;
+            background-color: #1b1e27;
+            display: flex;
+            text-align: center;
+            font-size: 15pt;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+
+            .headRowBlock {
+                flex: 1;
+                // border: 1px solid blue;
+            }
+
+            #firstHeadBlock {
+                flex: 1;
+
+                img {
+                    padding-top: 5px;
+                }
+
+            }
+
+            #secondHeadBlock {
+                flex: 3;
+                font-family: "Rubik", Sans-serif;
+                font-size: 17px;
+                font-weight: 200;
+                line-height: 45px;
+                text-align: center;
+                padding-top: 30px;
+
+                #homepageStand {
+                    
+                    color: #614e0f;
+                }
+
+                .headSpan {
+                    text-decoration: none;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    color: #ada8a0;
+                    display: inline-block;
+                    position: relative;
+                    // color: #0087ca;
+                }
+
+                .headSpan::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #614e0f;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+
+                .headSpan:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+
+                .headSpan:hover {
+                    color: #614e0f;
+
+                }
+            }
+
+            #thirdHeadBlock {
+                flex: 1;
+
+                img {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 30px;
+                }
+
+            }
+
+            // #fourtHeadBlock{
+            //     flex: 1;
+            // }
+
+        }
+
+        #mainSection {
+
+
+            height: 100vh;
+            // background-image: url(./media/cover\ main.jpg);
+            background-image: url(../media/cover\ main.jpg);
+            // background-color: #614e0f;
+            
+
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+            top: 0;
+            left: 0;
+
+            display: flex;
+
+            .rowBlock {
+                flex: 1;
+                // border: 1px solid blue;
+                color: white;
+                padding: 5px;
+
+                #screenCheck{
+                    
+                    .records{
+                      div {
+                        background-color: black;
+                        margin: auto;
+                        text-align: center;
+                        width: 250px;
+                        // padding-bottom: 25px;
+                        border-radius: 15px;
+                        height: 175px;
+                        margin-bottom: 5px;
+                        font-weight: bold;
+                      }
+                    }
+                }
+
+                #card {
+
+                    height: 800px;
+                    width: 500px;
+                    // border: 2px solid black;
+                    border-radius: 15px;
+                    text-align: center;
+
+                    #spaceHolder {
+                        height: 700px;
+                    }
+
+                    #actionBtn {
+
+                        height: 50px;
+                        width: 350px;
+                        border-radius: 5px;
+                        margin-left: 90px;
+
+                        background-color: black;
+
+
+                        padding-top: 30px;
+                        font-weight: bold;
+
+                      
+
+                        #goBtn {
+                            text-decoration: none;
+                            font-size: 21px;
+                            color: white;
+                           
+
+                        }
+                    }
+                    #actionBtn:hover {
+                        background-color: white;
+                        #goBtn {
+                            color: black;
+                        }
+                    }
+
+                    
+
+                }
+            }
+        }
+    }
+
+}

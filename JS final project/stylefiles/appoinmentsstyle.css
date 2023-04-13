@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap");
+body {
+  margin: 0;
+  font-family: "Rubik", Sans-serif;
+}
+body #wrapper #headerBlock {
+  color: rgb(65, 102, 102);
+  height: 110px;
+  background-color: #1b1e27;
+  display: flex;
+  text-align: center;
+  font-size: 15pt;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+body #wrapper #headerBlock .headRowBlock {
+  flex: 1;
+}
+body #wrapper #headerBlock #firstHeadBlock {
+  flex: 1;
+}
+body #wrapper #headerBlock #firstHeadBlock img {
+  padding-top: 5px;
+}
+body #wrapper #headerBlock #secondHeadBlock {
+  flex: 3;
+  font-family: "Rubik", Sans-serif;
+  font-size: 17px;
+  font-weight: 200;
+  line-height: 45px;
+  text-align: center;
+  padding-top: 30px;
+}
+body #wrapper #headerBlock #secondHeadBlock #appointmentsStand {
+  color: #614e0f;
+}
+body #wrapper #headerBlock #secondHeadBlock .headSpan {
+  text-decoration: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #ada8a0;
+  display: inline-block;
+  position: relative;
+}
+body #wrapper #headerBlock #secondHeadBlock .headSpan::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #614e0f;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+body #wrapper #headerBlock #secondHeadBlock .headSpan:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+body #wrapper #headerBlock #secondHeadBlock .headSpan:hover {
+  color: #614e0f;
+}
+body #wrapper #headerBlock #thirdHeadBlock {
+  flex: 1;
+}
+body #wrapper #headerBlock #thirdHeadBlock img {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+}
+body #wrapper #mainSection {
+  height: 100vh;
+  background-image: url(../media/cover\ main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+body #wrapper #mainSection .rowBlock {
+  flex: 1;
+  color: white;
+  padding: 5px;
+}
+body #wrapper #mainSection .rowBlock #card {
+  height: 800px;
+  width: 500px;
+  border-radius: 15px;
+  text-align: center;
+  opacity: 0.8;
+  background-color: #1b1e27;
+  margin: auto;
+}
+body #wrapper #mainSection .rowBlock #card #cardHeader {
+  color: white;
+  padding-top: 15px;
+}
+body #wrapper #mainSection .rowBlock #card hr {
+  height: 1px;
+  background-color: #c4a591;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock {
+  padding-top: 15px;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock #hairCutType {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .radio-container {
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #222;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  font-weight: bold;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .radio-container * {
+  box-sizing: border-box;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .radio-input {
+  appearance: none;
+  background-color: #ffffff;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #cccfdb;
+  margin: 0;
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .radio-input::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s transform ease-in-out;
+  box-shadow: inset 6px 6px #ffffff;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .radio-input:checked {
+  background: #0077ff;
+  border-color: #0077ff;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .radio-input:checked::before {
+  transform: scale(1);
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .radio {
+  cursor: pointer;
+  padding: 6px 8px;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .radio:not(:last-child) {
+  margin-right: 6px;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox-symbol {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  user-select: none;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox-container {
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #222;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox-container * {
+  box-sizing: border-box;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox-input {
+  position: absolute;
+  visibility: hidden;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox {
+  user-select: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox:not(:last-child) {
+  margin-right: 6px;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox:hover {
+  background: rgba(0, 119, 255, 0.06);
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox span {
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox span:first-child {
+  position: relative;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  transform: scale(1);
+  border: 1px solid #cccfdb;
+  transition: all 0.3s ease;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transform: translate3d(0, 0, 0);
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox span:last-child {
+  padding-left: 8px;
+  line-height: 18px;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox:hover span:first-child {
+  border-color: #0077ff;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox-input:checked + .checkbox span:first-child {
+  background: #0077ff;
+  border-color: #0077ff;
+  animation: zoom-in-out 0.3s ease;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock .checkbox-input:checked + .checkbox span:first-child svg {
+  stroke-dashoffset: 0;
+}
+@keyframes zoom-in-out {
+  50% {
+    transform: scale(0.9);
+  }
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock #dateBlock {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 18px;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock #dateBlock label {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock #dateInput {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #ffffff;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock #userNameBlock {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock #userNameInput {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #ffffff;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock #userPhoneBlock {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock #userPhoneInput {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #ffffff;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock #buttonBlock {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock #buttonBlock .button-1 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px, rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px, rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+body #wrapper #mainSection .rowBlock #card #formInputBlock #buttonBlock .button-1:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px, rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px, rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/*# sourceMappingURL=appoinmentsstyle.css.map */
